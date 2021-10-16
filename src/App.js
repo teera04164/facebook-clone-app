@@ -9,6 +9,9 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <span class="material-icons-outlined">
+          account_circle
+        </span>
         <a
           className="App-link"
           href="https://reactjs.org"

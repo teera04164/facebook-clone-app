@@ -1,5 +1,5 @@
-
 .nav-bar {
+  top: 0;
   z-index: 999;
   position: fixed;
   width: 100%;
@@ -12,25 +12,15 @@
   box-shadow: 0 2px 20px 0 rgb(0 0 0 / 5%);
 }
 
-.center-icon .MuiSvgIcon-root {
-  padding: 10px 20px 10px 20px;
-  cursor: pointer;
-}
-
-.center-icon .MuiSvgIcon-root:hover {
-  background-color: #f1f1f1;
-  border-radius: 6px;
-}
-
-.active {
+.MuiButtonBase-root.active {
   background-color: #e7f3ff;
-  fill: #4648ff;
   border-radius: 6px;
 }
 
-.active .MuiSvgIcon-root {
+.MuiButtonBase-root.active .MuiSvgIcon-root {
   fill: #4648ff;
 }
+
 
 .logo-fb > img {
   height: 40px;
@@ -60,11 +50,28 @@
 }
 
 .active-right .MuiSvgIcon-root {
-  fill: #4648ff;
+  fill: #4648ff !important;
 }
 
 .nav-center-mobile {
   display: none;
+}
+
+.nav-center {
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  height: 1px;
+    background-color: #b7aeae;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.center-icon .MuiButtonBase-root{
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 /* Custom, iPhone Retina */
@@ -80,6 +87,15 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  .list-menu-mobile {
+    background-color: white;
+    height: calc(100% - 66px);
+    padding-top: 66px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+  }
+
   .nav-center {
     display: none;
   }
@@ -102,7 +118,7 @@
     align-items: center;
   }
 
-  ul{
+  ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -114,7 +130,7 @@
     padding-right: 12px;
   }
 
-  .menu-mobile-item{
+  .menu-mobile-item {
     padding: 10px;
     display: flex;
     align-items: center;
@@ -122,7 +138,7 @@
     cursor: pointer;
   }
 
-  .menu-mobile-item:hover{
+  .menu-mobile-item:hover {
     background-color: #f3f3f3;
     border-radius: 6px;
   }

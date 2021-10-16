@@ -11,9 +11,9 @@ const Home = () => {
 
     return <>
         <Grid container style={{backgroundColor: '#e7e7e7'}}>
-            <Grid item xs={3}>
+            <Grid item xs={1} sm={3}>
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={10} sm={6}>
                 <Post/>
                 <Post/>
                 <Post/>
@@ -25,7 +25,7 @@ const Home = () => {
                 <Post/>
                 <Post/>
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs={1} sm={3}>
             </Grid>
           
         </Grid>
